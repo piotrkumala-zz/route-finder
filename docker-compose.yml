@@ -1,0 +1,27 @@
+version: "3.9"
+networks:
+  default:
+    driver: bridge
+volumes:
+  database:
+  logs:
+
+services:
+  api:
+    build: 
+      context: ./WebApplication/
+      dockerfile: Dockerfile
+    ports:
+      - "55555:55555"
+    environment:
+      - ASPNETCORE_URLS=http://+:55555
+  database:
+    image: neo4j
+    ports:
+      - "7474:7474" 
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/s3cr3t
+    volumes:
+      - logs:/logs
+      - database:/data
