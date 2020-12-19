@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Neo4jClient;
 
 namespace WebApplication
 {
@@ -27,6 +28,12 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IGraphClient>((IServiceProvider services) =>
+            {
+                var graphClient = new GraphClient(new Uri("http://localhost:7474"), "neo4j", "s3cr3t");
+                graphClient.ConnectAsync().Wait();
+                return graphClient;
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "WebApplication", Version = "v1"});
