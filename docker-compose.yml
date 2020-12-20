@@ -11,15 +11,17 @@ services:
     build: 
       context: ./WebApplication/
       dockerfile: Dockerfile
+    networks:
+      - default
     ports:
       - "55555:55555"
     environment:
       - ASPNETCORE_URLS=http://+:55555
+      - Database__DatabaseUri=http://database:7474
   database:
     image: neo4j
-    ports:
-      - "7474:7474" 
-      - "7687:7687"
+    networks:
+      - default
     environment:
       - NEO4J_AUTH=neo4j/s3cr3t
     volumes:

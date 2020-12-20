@@ -6,8 +6,11 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="WebApplication" t="IncludeRecursive">
         <e p=".dockerignore" t="Include" />
+        <e p="Config" t="Include">
+          <e p="DatabaseConfig.cs" t="Include" />
+        </e>
         <e p="Controllers" t="Include">
-          <e p="WeatherForecastController.cs" t="Include" />
+          <e p="TestController.cs" t="Include" />
         </e>
         <e p="Dockerfile" t="Include" />
         <e p="Program.cs" t="Include" />
@@ -15,7 +18,6 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="WeatherForecast.cs" t="Include" />
         <e p="WebApplication.csproj" t="IncludeRecursive" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
