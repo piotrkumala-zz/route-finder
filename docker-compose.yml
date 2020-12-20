@@ -22,7 +22,7 @@ services:
     image: neo4j
     networks:
       - default
-    ports:
+    ports: # remember to close ports in production, database should be only accessible from inside docker network
       - "7474:7474"
       - "7687:7687"
     environment:
