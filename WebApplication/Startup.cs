@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Neo4jClient;
+using WebApplication.Config;
 
 namespace WebApplication
 {
@@ -14,17 +15,20 @@ namespace WebApplication
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Configuration.GetSection(DatabaseConfig.Database).Bind(DatabaseConfig);
         }
 
         public IConfiguration Configuration { get; }
+        public DatabaseConfig DatabaseConfig { get; } = new();
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
             services.AddScoped<IGraphClient>(_ =>
             {
-                var graphClient = new GraphClient(new Uri("http://localhost:7474"), "neo4j", "s3cr3t");
+                var graphClient = new GraphClient(new Uri(DatabaseConfig.DatabaseUri), DatabaseConfig.Login, DatabaseConfig.Password);
                 graphClient.ConnectAsync().Wait();
                 return graphClient;
             });
