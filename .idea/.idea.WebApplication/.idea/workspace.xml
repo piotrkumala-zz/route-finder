@@ -8,11 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="498593ad-3617-4f74-97f2-6e590d710f1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/TestController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication/Models/City.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/TestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/CityController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +25,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9771B1B-9028-4496-853F-BBE4CEDF5E2A/3/SwaggerMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Controllers/WeatherForecastController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Controllers/TestController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/4f/0aadb8d1/ICypherFluentQuery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Startup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F7057F5-1F0A-484E-9999-CCC4282DF389/228/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F758DD2F-9E4C-41A0-B7A1-63138D66F75D/10/CallSiteVisitor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64548777-537E-4F35-9A9E-7A65BAB71497/11/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -41,8 +43,10 @@
       <option value="$PROJECT_DIR$/WebApplication/Config/DatabaseConfig.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" />
-      <option value="$PROJECT_DIR$/WebApplication/Controllers/TestController.cs" />
+      <option value="$PROJECT_DIR$/WebApplication/Models/City.cs" />
       <option value="$PROJECT_DIR$/docker-compose.yml" />
+      <option value="$PROJECT_DIR$/WebApplication/Controllers/TestController.cs" />
+      <option value="$PROJECT_DIR$/WebApplication/Controllers/CityController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ltG5a8tOMLJd8704ceZlUvcBc2" />
@@ -60,7 +64,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Docker.Docker-compose-build">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication">
     <configuration name="WebApplication" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebApplication/WebApplication.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
