@@ -30,10 +30,24 @@ namespace WebApplication.Controllers
         }
 
         [HttpPost]
-        public async Task Add([FromBody] City city)
+        public async Task Add([FromBody] CityRequest city)
         {
-            await _graphClient.Cypher.Create("(city:City $newCity)").WithParam("newCity", city)
+            var newCity = new City()
+            {
+                Name = city.Name,
+                Longitude = city.Longitude,
+                Latitude = city.Latitude,
+                Guid = Guid.NewGuid()
+            };
+            await _graphClient.Cypher.Create("(city:City $newCity)").WithParam("newCity", newCity)
                     .ExecuteWithoutResultsAsync();
+        }
+
+        [HttpDelete]
+        public async Task Delete([FromBody] City city)
+        {
+            var query = _graphClient.Cypher.Match("(x:City)").Where((City x) => x.Guid == city.Guid).Delete("x");
+            await query.ExecuteWithoutResultsAsync();
         }
     }
 }
