@@ -25,8 +25,8 @@ namespace WebApplication.Controllers
         [HttpGet]
         public async Task<IEnumerable<City>> Get()
         {
-            var query = _graphClient.Cypher.Match("(city)").Return(city => city.As<City>());
-            return await query.ResultsAsync;
+            return await _graphClient.Cypher.Match("(city)").Return(city => city.As<City>())
+                .ResultsAsync;
         }
 
         [HttpPost]
@@ -46,8 +46,8 @@ namespace WebApplication.Controllers
         [HttpDelete]
         public async Task Delete([FromBody] City city)
         {
-            var query = _graphClient.Cypher.Match("(x:City)").Where((City x) => x.Guid == city.Guid).Delete("x");
-            await query.ExecuteWithoutResultsAsync();
+            await _graphClient.Cypher.Match("(x:City)").Where((City x) => x.Guid == city.Guid).Delete("x")
+                .ExecuteWithoutResultsAsync();
         }
     }
 }
