@@ -7,6 +7,14 @@ volumes:
   logs:
 
 services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    networks:
+      - default
+    ports:
+      - "8080:80"
   api:
     build: 
       context: ./WebApplication/
@@ -14,7 +22,7 @@ services:
     networks:
       - default
     ports:
-      - "55555:55555"
+      - "55555:55555" # remember to close ports in production, api should only be accessible from inside docker network
     environment:
       - ASPNETCORE_URLS=http://+:55555
       - Database__DatabaseUri=http://database:7474
@@ -22,7 +30,7 @@ services:
     image: neo4j
     networks:
       - default
-    ports: # remember to close ports in production, database should be only accessible from inside docker network
+    ports: # remember to close ports in production, database should only be accessible from inside docker network
       - "7474:7474"
       - "7687:7687"
     environment:
