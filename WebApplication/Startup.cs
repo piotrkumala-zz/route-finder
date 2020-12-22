@@ -21,10 +21,21 @@ namespace WebApplication
 
         public IConfiguration Configuration { get; }
         public DatabaseConfig DatabaseConfig { get; } = new();
+        
+        readonly string MyAllowSpecificOrigins = "localhost:3000";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000");
+                    });
+            });
+            
             services.AddControllers().AddJsonOptions(options =>
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
             services.AddScoped<IGraphClient>(_ =>
@@ -53,6 +64,8 @@ namespace WebApplication
 
             app.UseRouting();
 
+            app.UseCors(MyAllowSpecificOrigins);
+            
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });

@@ -9,15 +9,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="498593ad-3617-4f74-97f2-6e590d710f1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/RoadsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Models/CityRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Models/Road.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Models/RoadRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/CityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/CityController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/City.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/City.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9771B1B-9028-4496-853F-BBE4CEDF5E2A/3/SwaggerMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Controllers/CityController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/4f/0aadb8d1/ICypherFluentQuery.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Models/City.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/d3/0cbf5b31/CypherWhereExpressionVisitor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F7057F5-1F0A-484E-9999-CCC4282DF389/228/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F7057F5-1F0A-484E-9999-CCC4282DF389/34F/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -206,6 +200,7 @@
       <workItem from="1608418655928" duration="6449000" />
       <workItem from="1608494313860" duration="1538000" />
       <workItem from="1608507273773" duration="4501000" />
+      <workItem from="1608597453345" duration="1928000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1608408919341</created>
@@ -294,24 +289,5 @@
     <MESSAGE value="add instructions how to deploy system to production environment" />
     <MESSAGE value="add guid to city node to avoid problems with large datasets, add remove method" />
     <option name="LAST_COMMIT_MESSAGE" value="add guid to city node to avoid problems with large datasets, add remove method" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Controllers/RoadsController.cs</url>
-          <line>34</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/RoadsController.cs" initialLine="34" containingFunctionPresentation="method 'Add'">
-            <startOffsets>
-              <option value="1133" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1174" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
