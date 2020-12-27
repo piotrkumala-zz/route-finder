@@ -27,12 +27,14 @@ namespace WebApplication.Controllers
         {
             var road = new Road
             {
-                Cost = roadRequest.GetCost()
+                Cost = roadRequest.GetCost(),
+                Distance = roadRequest.Distance,
+                Type = roadRequest.Type
             };
             await _graphClient.Cypher.Match("(x:City)", "(y:City)").Where((City x) => x.Guid == roadRequest.StartCity)
                 .AndWhere((City y) => y.Guid == roadRequest.EndCity).Create("(x)-[:ROAD $road]->(y)")
                 .WithParam("road", road).ExecuteWithoutResultsAsync();
         }
-        
+
     }
 }

@@ -12,11 +12,13 @@
         <e p="Controllers" t="Include">
           <e p="CityController.cs" t="Include" />
           <e p="RoadsController.cs" t="Include" />
+          <e p="ShortestPathController.cs" t="Include" />
         </e>
         <e p="Dockerfile" t="Include" />
         <e p="Models" t="Include">
           <e p="City.cs" t="Include" />
           <e p="CityRequest.cs" t="Include" />
+          <e p="PathRequest.cs" t="Include" />
           <e p="Road.cs" t="Include" />
           <e p="RoadRequest.cs" t="Include" />
           <e p="RoadType.cs" t="Include" />
