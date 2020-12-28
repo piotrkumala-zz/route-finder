@@ -3,6 +3,7 @@ import './App.css';
 import {AppBar, Tab, Tabs, Typography} from "@material-ui/core";
 import 'fontsource-roboto';
 import {TabPanel} from "./TabPanel";
+import {CityForm} from "./CityForm";
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
 
     useEffect(()=>{
         getData().then(r => console.log(r));
-    })
+    }, [])
 
     const getData = async () => {
         const response = await fetch('https://localhost:5001/City');
@@ -32,24 +33,22 @@ const App = () => {
 
           <AppBar position="static">
               <Typography variant="h3" className="App">
-                  News
+                  Route finder
               </Typography>
-              <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
-                  <Tab label="Item One" {...a11yProps(0)} />
-                  <Tab label="Item Two" {...a11yProps(1)} />
-                  <Tab label="Item Three" {...a11yProps(2)} />
+              <Tabs value={value} onChange={handleChange} centered>
+                  <Tab label="Dodaj miasto" {...a11yProps(0)} />
+                  <Tab label="Dodaj drogę" {...a11yProps(1)} />
+                  <Tab label="Znajdź najszybszą drogę" {...a11yProps(2)} />
               </Tabs>
           </AppBar>
           <TabPanel value={value} index={0}>
-              Item One
+              <CityForm/>
           </TabPanel>
           <TabPanel value={value} index={1}>
               Item Two
           </TabPanel>
           <TabPanel value={value} index={2}>
-              <div>
-                  {JSON.stringify(data)}
-              </div>
+              {JSON.stringify(data)}
           </TabPanel>
 
 

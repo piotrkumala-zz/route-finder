@@ -9,13 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="498593ad-3617-4f74-97f2-6e590d710f1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/ShortestPathController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Models/PathRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/RoadsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/RoadsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/Road.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/Road.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/CityForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/TabPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/TabPanel.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +27,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9771B1B-9028-4496-853F-BBE4CEDF5E2A/3/SwaggerMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Models/Road.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/4f/0aadb8d1/ICypherFluentQuery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F7057F5-1F0A-484E-9999-CCC4282DF389/2D8/TaskAwaiter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/d3/0cbf5b31/CypherWhereExpressionVisitor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F7057F5-1F0A-484E-9999-CCC4282DF389/228/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0F7057F5-1F0A-484E-9999-CCC4282DF389/34F/DynamicILGenerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F758DD2F-9E4C-41A0-B7A1-63138D66F75D/10/CallSiteVisitor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/kumak98/RiderProjects/WebApplication/WebApplication/Controllers/RoadsController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/28/25cb4273/CypherFluentQuery.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64548777-537E-4F35-9A9E-7A65BAB71497/11/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B856B39-F6B6-4E95-903A-A73496C0EBA8/a0/8a76287e/GraphClient.cs" root0="SKIP_HIGHLIGHTING" />
@@ -53,11 +55,11 @@
       <option value="$PROJECT_DIR$/WebApplication/Models/RoadType.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Models/RoadRequest.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/CityController.cs" />
-      <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Models/Road.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/RoadsController.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Models/PathRequest.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/ShortestPathController.cs" />
+      <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ltG5a8tOMLJd8704ceZlUvcBc2" />
@@ -208,7 +210,7 @@
       <workItem from="1608507273773" duration="4501000" />
       <workItem from="1608597453345" duration="1928000" />
       <workItem from="1609066289324" duration="5993000" />
-      <workItem from="1609110624746" duration="1297000" />
+      <workItem from="1609110624746" duration="4152000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1608408919341</created>
@@ -266,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608509406255</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add controller to handle shortest path request">
+      <created>1609112822278</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609112822278</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,23 +305,24 @@
     <MESSAGE value="move database config to settings" />
     <MESSAGE value="add instructions how to deploy system to production environment" />
     <MESSAGE value="add guid to city node to avoid problems with large datasets, add remove method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add guid to city node to avoid problems with large datasets, add remove method" />
+    <MESSAGE value="add controller to handle shortest path request" />
+    <option name="LAST_COMMIT_MESSAGE" value="add controller to handle shortest path request" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplication/Controllers/ShortestPathController.cs</url>
-          <line>57</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/ShortestPathController.cs" initialLine="50" containingFunctionPresentation="method 'GetShortestPath'">
+          <url>file://$PROJECT_DIR$/WebApplication/Controllers/CityController.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/WebApplication/Controllers/CityController.cs" initialLine="33" containingFunctionPresentation="method 'Add'">
             <startOffsets>
-              <option value="2134" />
+              <option value="946" />
             </startOffsets>
             <endOffsets>
-              <option value="2166" />
+              <option value="947" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
