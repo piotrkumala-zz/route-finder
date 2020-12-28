@@ -1,24 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {AppBar, Tab, Tabs, Typography} from "@material-ui/core";
 import 'fontsource-roboto';
 import {TabPanel} from "./TabPanel";
 import {CityForm} from "./CityForm";
 import {RoadForm} from "./RoadForm";
+import {ShortestPathForm} from "./ShortestPathForm";
 
 
 const App = () => {
-    const [data, setData] = useState([{}]);
     const [value, setValue] = useState(0);
 
-    useEffect(()=>{
-        getData().then(r => console.log(r));
-    }, [])
-
-    const getData = async () => {
-        const response = await fetch('https://localhost:5001/City');
-        setData(await response.json());
-    }
     const handleChange = (event: any, newValue: React.SetStateAction<number>) => {
         setValue(newValue);
     };
@@ -42,15 +34,18 @@ const App = () => {
                   <Tab label="Znajdź najszybszą drogę" {...a11yProps(2)} />
               </Tabs>
           </AppBar>
-          <TabPanel value={value} index={0}>
-              <CityForm/>
-          </TabPanel>
-          <TabPanel value={value} index={1}>
-              <RoadForm/>
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-              {JSON.stringify(data)}
-          </TabPanel>
+          <div style={{width: '50%'}}>
+              <TabPanel value={value} index={0}>
+                  <CityForm/>
+              </TabPanel>
+              <TabPanel value={value} index={1}>
+                  <RoadForm/>
+              </TabPanel>
+              <TabPanel value={value} index={2}>
+                  <ShortestPathForm/>
+              </TabPanel>
+
+          </div>
 
 
 

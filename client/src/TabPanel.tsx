@@ -13,7 +13,7 @@ export const TabPanel = (props: { [x: string]: any; children: any; value: any; i
             {...other}
         >
             {value === index && (
-                <Box p={9}>
+                <Box p={10}>
                     {children}
                 </Box>
             )}

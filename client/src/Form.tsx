@@ -1,5 +1,4 @@
 import {
-    TextField,
     Button,
     Backdrop,
     CircularProgress,
@@ -16,7 +15,8 @@ import MuiAlert, { AlertProps } from '@material-ui/lab/Alert';
 const Alert = (props: AlertProps) => <MuiAlert elevation={6} variant="filled" {...props} />;
 
 
-export const Form = (props: {url: string, body: string, children: any;})=>{
+// eslint-disable-next-line no-empty-pattern
+export const Form = (props: {url: string, body: string, children: any, getResponse?: ([{}]) => void })=>{
 
     const [open, setOpen] = useState(false);
     const [operationOpen, setOperationOpen] = useState(false);
@@ -42,6 +42,7 @@ export const Form = (props: {url: string, body: string, children: any;})=>{
                 setOperationOpen(true);
                 setOperationSuccess(true);
                 setOperationMessage('Operacja udana');
+                props.getResponse?.(await response.json());
             } else {
                 setOpen(false);
                 setOperationOpen(true);
@@ -59,7 +60,7 @@ export const Form = (props: {url: string, body: string, children: any;})=>{
 
 
     return (
-        <form autoComplete="off" style={rootStyle}>
+        <form autoComplete="off" style={rootStyle} >
                 {props.children}
                 <Button variant="contained" color="primary" onClick={() => post()}>
                     Zapisz

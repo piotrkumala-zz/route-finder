@@ -8,14 +8,14 @@ import {useEffect, useState} from "react";
 import {Form} from "./Form";
 import MenuItem from '@material-ui/core/MenuItem';
 
-enum RoadType {
+export enum RoadType {
     City= 'City',
     Countryside = 'Countryside',
     Express = 'Express',
     Highway = 'Highway'
 }
 
-interface City {
+export interface City {
     name?: string;
     guid?: string;
     longitude?: number;
@@ -32,7 +32,7 @@ export const RoadForm = ()=>{
     const [data, setData] = useState<City[]>([{}]);
 
     useEffect(()=>{
-        getData().then(r => console.log(r));
+        getData().then();
     }, [])
 
     const getData = async () => {
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme: Theme) =>
 createStyles({
         formControl: {
             margin: theme.spacing(1),
-                minWidth: 120,
+            minWidth: 120,
         },
         selectEmpty: {
             marginTop: theme.spacing(2),
