@@ -4,6 +4,7 @@ import {AppBar, Tab, Tabs, Typography} from "@material-ui/core";
 import 'fontsource-roboto';
 import {TabPanel} from "./TabPanel";
 import {CityForm} from "./CityForm";
+import {RoadForm} from "./RoadForm";
 
 
 const App = () => {
@@ -45,7 +46,7 @@ const App = () => {
               <CityForm/>
           </TabPanel>
           <TabPanel value={value} index={1}>
-              Item Two
+              <RoadForm/>
           </TabPanel>
           <TabPanel value={value} index={2}>
               {JSON.stringify(data)}
