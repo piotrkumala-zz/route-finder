@@ -61,10 +61,10 @@
     ```
    gdzie wartość przed `/` to nazwa użytkownika, a wartość po `/` to hasło
 1. Korzystając z konsoli Cypher wykonaj te komendy:
-   ```cypher 
-   CREATE CONSTRAINT name_constraint ON (city:City) ASSERT city.Name IS UNIQUE
-   CREATE CONSTRAINT latitude_constraint ON (city:City) ASSERT city.Latitude IS UNIQUE
-   CREATE CONSTRAINT longitude_constraint ON (city:City) ASSERT city.Longitude IS UNIQUE
+   ``` 
+   CREATE CONSTRAINT name_constraint ON (city:City) ASSERT city.Name IS UNIQUE;
+   CREATE CONSTRAINT latitude_constraint ON (city:City) ASSERT city.Latitude IS UNIQUE;
+   CREATE CONSTRAINT longitude_constraint ON (city:City) ASSERT city.Longitude IS UNIQUE;
    ```
 1. Zamknij porty kontenera bazy danych, aby zwiększyć bezpieczeństwo, w tym celu zakomentuj w `docker-compose.yml`
    ```yaml
