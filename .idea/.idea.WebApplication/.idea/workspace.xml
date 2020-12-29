@@ -8,13 +8,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="498593ad-3617-4f74-97f2-6e590d710f1f" name="Default Changelist" comment="">
+    <list default="true" id="498593ad-3617-4f74-97f2-6e590d710f1f" name="Default Changelist" comment="Add start of documentation">
+      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/CityForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CityForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/RoadForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/RoadForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ShortestPathForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ShortestPathForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockerExecCommand">
+    <ExecCommand>
+      <option name="command" value="bash" />
+      <option name="imageId" value="sha256:1badc64fc564c9662df22bec0d6049b914a2715b13c071dfa53fee8507329cd0" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="sh" />
+      <option name="imageId" value="sha256:1badc64fc564c9662df22bec0d6049b914a2715b13c071dfa53fee8507329cd0" />
+    </ExecCommand>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,7 +59,6 @@
       <option value="$PROJECT_DIR$/WebApplication/Config/DatabaseConfig.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/WeatherForecastController.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/TestController.cs" />
-      <option value="$PROJECT_DIR$/docker-compose.yml" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/Roads.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Models/CityRequest.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Models/City.cs" />
@@ -52,6 +70,8 @@
       <option value="$PROJECT_DIR$/WebApplication/Models/PathRequest.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Controllers/ShortestPathController.cs" />
       <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
+      <option value="$PROJECT_DIR$/README.md" />
+      <option value="$PROJECT_DIR$/docker-compose.yml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ltG5a8tOMLJd8704ceZlUvcBc2" />
@@ -67,9 +87,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication">
+  <component name="RunManager" selected="Docker.Docker-compose-build">
     <configuration name="Web" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -203,7 +224,7 @@
       <workItem from="1608597453345" duration="1928000" />
       <workItem from="1609066289324" duration="5993000" />
       <workItem from="1609110624746" duration="4152000" />
-      <workItem from="1609251125003" duration="1894000" />
+      <workItem from="1609251125003" duration="5433000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1608408919341</created>
@@ -268,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609112822278</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add start of documentation">
+      <created>1609254444704</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609254444704</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +327,8 @@
     <MESSAGE value="add instructions how to deploy system to production environment" />
     <MESSAGE value="add guid to city node to avoid problems with large datasets, add remove method" />
     <MESSAGE value="add controller to handle shortest path request" />
-    <option name="LAST_COMMIT_MESSAGE" value="add controller to handle shortest path request" />
+    <MESSAGE value="Add start of documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add start of documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

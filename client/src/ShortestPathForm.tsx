@@ -32,7 +32,7 @@ export const ShortestPathForm = ()=>{
     }, [])
 
     const getData = async () => {
-        const response = await fetch('https://localhost:5001/City');
+        const response = await fetch(process.env.REACT_APP_API_URL + '/City');
         setData( await response.json() as City[]);
     }
 
@@ -63,7 +63,7 @@ export const ShortestPathForm = ()=>{
         : ''
 
     return<div>
-        <Form url={"https://localhost:5001/ShortestPath"}
+        <Form url={process.env.REACT_APP_API_URL + '/ShortestPath'}
                      body={JSON.stringify({startCity: startCity, endCity: endCity })}
                      getResponse={(data) =>{setResult(data as Result[])}}
                      buttonCaption={'Szukaj'}

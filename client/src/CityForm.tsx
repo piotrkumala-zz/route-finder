@@ -19,7 +19,7 @@ export const CityForm = ()=>{
     const nameLabel = 'Nazwa miasta', longitudeLabel = 'Długość geograficzna', latitudeLabel = 'Szerokość georgraficzna';
 
     return (
-        <Form url={"https://localhost:5001/City"} body={JSON.stringify({name: name, latitude: latitude, longitude: longitude})}>
+        <Form url={ process.env.API_URL + '/City'} body={JSON.stringify({name: name, latitude: latitude, longitude: longitude})}>
             <FormControl className={classes.formControl}>
                 <TextField id="name"
                            label={nameLabel}

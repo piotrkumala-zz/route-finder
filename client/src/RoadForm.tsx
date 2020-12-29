@@ -36,14 +36,14 @@ export const RoadForm = ()=>{
     }, [])
 
     const getData = async () => {
-        const response = await fetch('https://localhost:5001/City');
+        const response = await fetch(process.env.REACT_APP_API_URL + '/City');
         setData( await response.json() as City[]);
     }
 
     const classes = useStyles();
     const distanceLabel = 'Długość drogi', roadTypeLabel = 'Typ drogi', startCityLabel = 'Miasto początkowe', endCityLabel = "Miasto końcowe";
 
-    return <Form url={"https://localhost:5001/Roads"} body={JSON.stringify({distance: distance, type: type, startCity: startCity, endCity: endCity })}>
+    return <Form url={process.env.REACT_APP_API_URL + '/Roads'} body={JSON.stringify({distance: distance, type: type, startCity: startCity, endCity: endCity })}>
         <FormControl className={classes.formControl}>
             <TextField id="name"
                        label={distanceLabel}

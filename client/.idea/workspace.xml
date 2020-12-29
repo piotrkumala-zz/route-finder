@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="319588cc-68fc-4f51-8fc9-a5fe5b497eb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CityForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/CityForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RoadForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoadForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ShortestPathForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShortestPathForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +76,7 @@
       <workItem from="1609066975934" duration="1986000" />
       <workItem from="1609110621058" duration="1219000" />
       <workItem from="1609113716780" duration="14905000" />
-      <workItem from="1609251139197" duration="2143000" />
+      <workItem from="1609251139197" duration="5592000" />
     </task>
     <task id="LOCAL-00001" summary="add basic client app">
       <created>1608603453527</created>
@@ -99,11 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609251515721</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add display of results">
+      <created>1609253309130</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609253309130</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -122,6 +139,7 @@
     <MESSAGE value="cleanup css" />
     <MESSAGE value="add create city form" />
     <MESSAGE value="change button caption in shortest path form" />
-    <option name="LAST_COMMIT_MESSAGE" value="change button caption in shortest path form" />
+    <MESSAGE value="add display of results" />
+    <option name="LAST_COMMIT_MESSAGE" value="add display of results" />
   </component>
 </project>

@@ -22,7 +22,7 @@ services:
     networks:
       - default
     ports:
-      - "55555:55555" # remember to close ports in production, api should only be accessible from inside docker network
+      - "55555:55555" # needs to be open because browsers are not really all that smart :D
     environment:
       - ASPNETCORE_URLS=http://+:55555
       - Database__DatabaseUri=http://database:7474
@@ -30,9 +30,9 @@ services:
     image: neo4j
     networks:
       - default
-    ports: # remember to close ports in production, database should only be accessible from inside docker network
-      - "7474:7474"
-      - "7687:7687"
+#    ports: # remember to close ports in production, database should only be accessible from inside docker network
+#      - "7474:7474"
+#      - "7687:7687"
     environment:
       - NEO4J_AUTH=neo4j/s3cr3t
       - NEO4J_dbms_security_procedures_unrestricted=gds.*,apoc.*
