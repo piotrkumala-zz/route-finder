@@ -61,7 +61,7 @@
     ```
    gdzie wartość przed `/` to nazwa użytkownika, a wartość po `/` to hasło
 1. Korzystając z konsoli Cypher wykonaj te komendy:
-   ```sql 
+   ```cypher 
    CREATE CONSTRAINT name_constraint ON (city:City) ASSERT city.Name IS UNIQUE
    CREATE CONSTRAINT latitude_constraint ON (city:City) ASSERT city.Latitude IS UNIQUE
    CREATE CONSTRAINT longitude_constraint ON (city:City) ASSERT city.Longitude IS UNIQUE
@@ -73,3 +73,4 @@
       - "7687:7687"
    ```
 1. Uruchom ponownie kontenery korzystając z `docker-compose up -d`
+1. Przejdź do strony localhost:3000 aby zacząć korzystać z aplikacji
