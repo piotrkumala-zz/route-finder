@@ -16,7 +16,7 @@ const Alert = (props: AlertProps) => <MuiAlert elevation={6} variant="filled" {.
 
 
 // eslint-disable-next-line no-empty-pattern
-export const Form = (props: {url: string, body: string, children: any, getResponse?: ([{}]) => void })=>{
+export const Form = (props: {url: string, body: string, children: any, getResponse?: ([{}]) => void, buttonCaption?: string })=>{
 
     const [open, setOpen] = useState(false);
     const [operationOpen, setOperationOpen] = useState(false);
@@ -63,7 +63,7 @@ export const Form = (props: {url: string, body: string, children: any, getRespon
         <form autoComplete="off" style={rootStyle} >
                 {props.children}
                 <Button variant="contained" color="primary" onClick={() => post()}>
-                    Zapisz
+                    {props.buttonCaption ? props.buttonCaption : 'Zapisz'}
                 </Button>
                 <Backdrop className={classes.backdrop} open={open}>
                     <CircularProgress color="inherit" />

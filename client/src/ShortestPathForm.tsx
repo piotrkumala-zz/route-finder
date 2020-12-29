@@ -27,7 +27,11 @@ export const ShortestPathForm = ()=>{
     const classes = useStyles();
     const startCityLabel = 'Miasto początkowe', endCityLabel = "Miasto końcowe";
 
-    return <Form url={"https://localhost:5001/ShortestPath"} body={JSON.stringify({startCity: startCity, endCity: endCity })} getResponse={(data) =>{console.log(data)}}>
+    return <Form url={"https://localhost:5001/ShortestPath"}
+                 body={JSON.stringify({startCity: startCity, endCity: endCity })}
+                 getResponse={(data) =>{console.log(data)}}
+                 buttonCaption={'Szukaj'}
+    >
         <FormControl className={classes.formControl} >
             <InputLabel>
                 {startCityLabel}
@@ -37,7 +41,7 @@ export const ShortestPathForm = ()=>{
                 value={startCity}
                 onChange={event => {setStartCity(event.target.value as string)}}
             >
-                {data.map((d, idx)=> <MenuItem value={d.guid}>{d.name}</MenuItem> )}
+                {data.map((d)=> <MenuItem value={d.guid}>{d.name}</MenuItem> )}
             </Select>
         </FormControl>
 
@@ -50,7 +54,7 @@ export const ShortestPathForm = ()=>{
                 value={endCity}
                 onChange={event => {setEndCity(event.target.value as string)}}
             >
-                {data.filter(value => value.guid !== startCity).map((d, idx)=> <MenuItem value={d.guid}>{d.name}</MenuItem> )}
+                {data.filter(value => value.guid !== startCity).map((d)=> <MenuItem value={d.guid}>{d.name}</MenuItem> )}
             </Select>
         </FormControl>
     </Form>
